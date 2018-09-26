@@ -32,7 +32,7 @@ post '/visit' do
   @phone = params[:phone]
   @datetime = params[:datetime]
   @barber = params[:barber]
-  @color = params[:color]
+  @color = params[:colorpicker]
 
   f = File.open('public/userlist.txt', 'a')
   f.write "\nUser: #{@username}. Phone: #{@phone}. Date and time: #{@datetime}. Barber: #{@barber}. Color: #{@color}"
